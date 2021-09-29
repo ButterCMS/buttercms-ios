@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gdV-IM-XsH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="p9E-yk-M6B">
+            <objects>
+                <tabBarController id="gdV-IM-XsH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lL0-9l-eoS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.070588235294117646" green="0.10196078431372549" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.83921568627450982" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kh6-VS-Ofm" kind="relationship" relationship="viewControllers" id="wXc-aR-5Dj"/>
+                        <segue destination="HDN-I2-gfu" kind="relationship" relationship="viewControllers" id="0Yu-1W-mI2"/>
+                        <segue destination="T6Y-Av-zAL" kind="relationship" relationship="viewControllers" id="zU6-P7-fZd"/>
+                        <segue destination="1GJ-Mq-6P0" kind="relationship" relationship="viewControllers" id="kJc-eh-6DD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zT-gF-m0O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-597" y="86"/>
+        </scene>
+        <!--Pages-->
+        <scene sceneID="uuz-5r-eTE">
+            <objects>
+                <tableViewController id="T6Y-Av-zAL" customClass="PagesViewController" customModule="ButterCMSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vhL-3l-Z3G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Vk1-iK-jWT">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vk1-iK-jWT" id="uHb-3V-pEl">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="T6Y-Av-zAL" id="S7b-SV-5KD"/>
+                            <outlet property="delegate" destination="T6Y-Av-zAL" id="gLy-9R-mp1"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Pages" image="Pages_not_selected" selectedImage="Blogs_not_selected" id="wWG-aU-gv6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VB6-nX-XXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403" y="454"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fKs-j7-WRi">
+            <objects>
+                <tableViewController id="kh6-VS-Ofm" customClass="HomeViewController" customModule="ButterCMSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zsq-8R-YeA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="kh6-VS-Ofm" id="wvx-od-qxL"/>
+                            <outlet property="delegate" destination="kh6-VS-Ofm" id="aGq-42-raY"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home_not_selected" selectedImage="Home_not_selected" id="Usl-dI-xJk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLd-dN-6fE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="-491"/>
+        </scene>
+        <!--Blogs-->
+        <scene sceneID="yOb-Aj-jGB">
+            <objects>
+                <tableViewController id="HDN-I2-gfu" customClass="BlogsViewController" customModule="ButterCMSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i9h-cV-MLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RuK-L2-8cE">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RuK-L2-8cE" id="rT6-zN-C9a">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HDN-I2-gfu" id="ihk-tV-OAI"/>
+                            <outlet property="delegate" destination="HDN-I2-gfu" id="dY1-Xh-px8"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Blogs" image="Blogs_not_selected" selectedImage="Blogs_not_selected" id="VYp-v9-sjB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlW-wV-qwN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="-253"/>
+        </scene>
+        <!--Collections-->
+        <scene sceneID="CfL-iM-B2j">
+            <objects>
+                <tableViewController id="1GJ-Mq-6P0" customClass="CollectionsViewController" customModule="ButterCMSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="E7v-aE-JOB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eiK-S5-trI">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eiK-S5-trI" id="KRa-9H-CMd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1GJ-Mq-6P0" id="X1t-NS-A0g"/>
+                            <outlet property="delegate" destination="1GJ-Mq-6P0" id="6R8-ZB-dxe"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Collections" image="Collections_not_selected" selectedImage="Collections_not_selected" id="xVS-ZA-f4F"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tL6-XR-XMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="453"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blogs_not_selected" width="25" height="25"/>
+        <image name="Collections_not_selected" width="25" height="25"/>
+        <image name="Home_not_selected" width="25" height="25"/>
+        <image name="Pages_not_selected" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

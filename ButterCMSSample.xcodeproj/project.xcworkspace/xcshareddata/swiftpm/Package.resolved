@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ButterCMSSDK",
+        "repositoryURL": "https://github.com/ButterCMS/buttercms-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "427ab8456b8822cf724d3a657f65a655c292d5b7",
+          "version": "1.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
