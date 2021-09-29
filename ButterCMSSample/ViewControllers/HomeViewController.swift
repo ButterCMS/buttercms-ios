@@ -17,6 +17,7 @@ class HomeViewController: UITableViewController {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "HomeTitleCell", bundle: nil), forCellReuseIdentifier: "HomeTitleCell")
         tableView.register(UINib(nibName: "HomeSectionCell", bundle: nil), forCellReuseIdentifier: "HomeSectionCell")
+        tableView.register(UINib(nibName: "HomeDocurlCell", bundle: nil), forCellReuseIdentifier: "HomeDocurlCell")
 
         viewModel = HomeViewModel()
         bind()
@@ -78,12 +79,12 @@ extension HomeViewController {
             cell.title.text = homeSection.title
             cell.subTitle.text = homeSection.subtitle
             cell.url = homeSection.buttonurl
-            cell.learnButtonClicked.sink { url in
+            cell.learnButtonClickedSubject.sink { url in
                     let webView = WebViewControllew(url: url)
                     self.show(webView, sender: self)
             }
             .store(in: &subscriotions)
-            cell.buttonClicked.sink { _ in
+            cell.buttonClickedSubject.sink { _ in
                 switch homeSection.title {
                 case "Blog Engine":
                     self.tabBarController?.selectedIndex = 1
@@ -99,7 +100,15 @@ extension HomeViewController {
             .store(in: &subscriotions)
             return cell
         case .docUrl:
-            return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeDocurlCell", for: indexPath) as? HomeDocurlCell else {
+                return UITableViewCell()
+            }
+            cell.docUrlButtonClickedSubject.sink { url in
+                let webView = WebViewControllew(url: url)
+                self.show(webView, sender: self)
+            }
+            .store(in: &subscriotions)
+            return cell
         }
     }
 }

@@ -6,18 +6,18 @@
 //
 
 import UIKit
+import Combine
 
 class HomeDocurlCell: UITableViewCell {
+    let docUrlButtonClickedSubject = PassthroughSubject<String, Never>()
 
+    @IBOutlet weak var docUrlButton: UIButton!
+
+    @IBAction func docUrlButtonClicked(_ sender: Any) {
+        docUrlButtonClickedSubject.send("https://buttercms.com/docs/api/?javascript#")
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.docUrlButton.allowTextToScale()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

@@ -17,15 +17,15 @@ class HomeSectionCell: UITableViewCell {
     @IBOutlet weak var content: UIView!
 
     var url: String = ""
-    let buttonClicked = PassthroughSubject<String, Never>()
-    let learnButtonClicked = PassthroughSubject<String, Never>()
+    let buttonClickedSubject = PassthroughSubject<String, Never>()
+    let learnButtonClickedSubject = PassthroughSubject<String, Never>()
 
     @IBAction func urlButtonClicked(_ sender: Any) {
-        buttonClicked.send("")
+        buttonClickedSubject.send("")
     }
 
     @IBAction func learnMoreBUttonClicked(_ sender: Any) {
-        learnButtonClicked.send(url)
+        learnButtonClickedSubject.send(url)
     }
 
     override func awakeFromNib() {
@@ -40,11 +40,5 @@ class HomeSectionCell: UITableViewCell {
         self.content.layer.cornerRadius = 10
         self.button.allowTextToScale()
         self.learnMoreButton.allowTextToScale()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 }

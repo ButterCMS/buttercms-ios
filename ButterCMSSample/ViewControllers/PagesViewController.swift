@@ -6,7 +6,6 @@
 //
 
 
-
 import UIKit
 
 class PagesViewController: UITableViewController {
@@ -17,4 +16,3 @@ class PagesViewController: UITableViewController {
     }
 
 }
-
