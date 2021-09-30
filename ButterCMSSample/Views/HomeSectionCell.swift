@@ -38,7 +38,6 @@ class HomeSectionCell: UITableViewCell {
         self.content.layer.shadowColor = UIColor.black.cgColor
         self.content.backgroundColor = .white
         self.content.layer.cornerRadius = 10
-        self.button.allowTextToScale()
-        self.learnMoreButton.allowTextToScale()
+        // self.button.allowTextToScale()
     }
 }
