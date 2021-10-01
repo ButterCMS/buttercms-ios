@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		563425C32707531500C621EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F7065F26C5A798006D1194 /* Assets.xcassets */; };
 		56C8AD9526F4880C0034A41F /* ButterCMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 56C8AD9426F4880C0034A41F /* ButterCMSSDK */; };
 		56C8AD9926F4A0DE0034A41F /* HomePageFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */; };
 		56C8AD9D26F4A2AE0034A41F /* ButterCMSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9C26F4A2AE0034A41F /* ButterCMSManager.swift */; };
@@ -23,7 +24,6 @@
 		56F7065926C5A795006D1194 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F7065826C5A795006D1194 /* SceneDelegate.swift */; };
 		56F7065B26C5A795006D1194 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F7065A26C5A795006D1194 /* ViewController.swift */; };
 		56F7065E26C5A795006D1194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F7065C26C5A795006D1194 /* Main.storyboard */; };
-		56F7066026C5A798006D1194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F7065F26C5A798006D1194 /* Assets.xcassets */; };
 		56F7066326C5A798006D1194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F7066126C5A798006D1194 /* LaunchScreen.storyboard */; };
 		56FD0B002700A42800C595D5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FD0AFF2700A42800C595D5 /* WebViewController.swift */; };
 		56FD0B0327021A9400C595D5 /* UIButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FD0B0227021A9400C595D5 /* UIButtonHelper.swift */; };
@@ -48,7 +48,7 @@
 		56F7065826C5A795006D1194 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56F7065A26C5A795006D1194 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56F7065D26C5A795006D1194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		56F7065F26C5A798006D1194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56F7065F26C5A798006D1194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ButterCMSSample/Assets/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		56F7066226C5A798006D1194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56F7066426C5A798006D1194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56FD0AFF2700A42800C595D5 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		563425C4270753A900C621EB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				56F7065F26C5A798006D1194 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		56C8AD9626F48D350034A41F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +146,7 @@
 		56F7065526C5A795006D1194 /* ButterCMSSample */ = {
 			isa = PBXGroup;
 			children = (
+				563425C4270753A900C621EB /* Assets */,
 				56FD0B0127021A6700C595D5 /* Helpers */,
 				56C8AD9E26F4C8570034A41F /* ViewModel */,
 				56C8AD9B26F4A2940034A41F /* Managers */,
@@ -147,7 +156,6 @@
 				56F7065626C5A795006D1194 /* AppDelegate.swift */,
 				56F7065826C5A795006D1194 /* SceneDelegate.swift */,
 				56F7065A26C5A795006D1194 /* ViewController.swift */,
-				56F7065F26C5A798006D1194 /* Assets.xcassets */,
 				56F7066126C5A798006D1194 /* LaunchScreen.storyboard */,
 				56F7066426C5A798006D1194 /* Info.plist */,
 			);
@@ -230,7 +238,7 @@
 				56FD0B0727021CAC00C595D5 /* HomeDocurlCell.xib in Resources */,
 				56CD39BF26FCB4ED003B26E9 /* HomeSectionCell.xib in Resources */,
 				56C8ADA826F65F780034A41F /* HomeTitleCell.xib in Resources */,
-				56F7066026C5A798006D1194 /* Assets.xcassets in Resources */,
+				563425C32707531500C621EB /* Assets.xcassets in Resources */,
 				56F7065E26C5A795006D1194 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2Q27ZEA7C;
 				INFOPLIST_FILE = ButterCMSSample/Info.plist;
@@ -443,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2Q27ZEA7C;
 				INFOPLIST_FILE = ButterCMSSample/Info.plist;
