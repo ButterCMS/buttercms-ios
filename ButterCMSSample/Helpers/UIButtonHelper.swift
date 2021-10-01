@@ -13,4 +13,8 @@ func allowTextToScale(minFontScale: CGFloat = 0.5, numberOfLines: Int = 1) {
     self.titleLabel?.lineBreakMode = .byTruncatingTail
     self.titleLabel?.numberOfLines = numberOfLines
     }
+
+    func applyRoundCornders(cornerRadius: CGFloat = 5) {
+        self.layer.cornerRadius = cornerRadius
+    }
 }

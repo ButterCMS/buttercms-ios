@@ -35,43 +35,39 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSu-bB-Yup">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vSu-bB-Yup">
                                 <rect key="frame" x="5" y="203" width="278" height="25"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="254" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ak-E2-enm" userLabel="Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="254" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ak-E2-enm" userLabel="Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="156.5" height="25"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="KGb-rE-FJb"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="PREVIEW INTEGRATION">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="3"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="PREVIEW INTEGRATION">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="urlButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="efV-Q7-SXY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdP-sn-J86">
-                                        <rect key="frame" x="233.5" y="0.0" width="44.5" height="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdP-sn-J86">
+                                        <rect key="frame" x="166.5" y="0.0" width="111.5" height="25"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="oV4-Cx-sBx"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="LEARN MORE">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="3"/>
-                                            <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="LEARN MORE"/>
                                         <connections>
                                             <action selector="learnMoreBUttonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hUP-96-vdq"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="fdP-sn-J86" firstAttribute="leading" secondItem="8ak-E2-enm" secondAttribute="trailing" constant="5" id="6Vo-xn-fch"/>
+                                    <constraint firstItem="fdP-sn-J86" firstAttribute="leading" secondItem="8ak-E2-enm" secondAttribute="trailing" constant="5" id="IPk-6V-BCd"/>
                                 </constraints>
                             </stackView>
                         </subviews>
