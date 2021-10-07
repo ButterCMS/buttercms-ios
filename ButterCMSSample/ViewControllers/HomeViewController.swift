@@ -21,7 +21,7 @@ class HomeViewController: UITableViewController {
 
         viewModel = HomeViewModel()
         bind()
-        viewModel.setupOutput()
+        viewModel.reload()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.tableView.delegate = self
         self.tableView.dataSource = self

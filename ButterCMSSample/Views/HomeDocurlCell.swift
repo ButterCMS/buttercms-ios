@@ -18,6 +18,7 @@ class HomeDocurlCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.docUrlButton.applyRoundCornders()
         self.docUrlButton.allowTextToScale()
     }
 }

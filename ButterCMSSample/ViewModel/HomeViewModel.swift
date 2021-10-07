@@ -33,7 +33,7 @@ class HomeViewModel {
             .store(in: &subscriptions)
     }
 
-    func setupOutput() {
+    func reload() {
         ButterCMSManager.shared.getHomePage()
     }
 }

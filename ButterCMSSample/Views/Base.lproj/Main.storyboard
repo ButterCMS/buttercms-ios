@@ -16,8 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.0" green="0.0" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.070588235294117646" green="0.10196078431372549" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" red="1" green="0.83921568627450982" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
@@ -54,7 +53,7 @@
                             <outlet property="delegate" destination="T6Y-Av-zAL" id="gLy-9R-mp1"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Pages" image="Pages_not_selected" selectedImage="Blogs_not_selected" id="wWG-aU-gv6"/>
+                    <tabBarItem key="tabBarItem" title="Pages" image="Pages_not_selected" selectedImage="Pages_not_selected" id="wWG-aU-gv6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VB6-nX-XXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
