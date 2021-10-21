@@ -15,13 +15,13 @@ class HomeViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "HomeTitleCell", bundle: nil), forCellReuseIdentifier: "HomeTitleCell")
-        tableView.register(UINib(nibName: "HomeSectionCell", bundle: nil), forCellReuseIdentifier: "HomeSectionCell")
-        tableView.register(UINib(nibName: "HomeDocurlCell", bundle: nil), forCellReuseIdentifier: "HomeDocurlCell")
+        self.tableView.register(UINib(nibName: "HomeTitleCell", bundle: nil), forCellReuseIdentifier: "HomeTitleCell")
+        self.tableView.register(UINib(nibName: "HomeSectionCell", bundle: nil), forCellReuseIdentifier: "HomeSectionCell")
+        self.tableView.register(UINib(nibName: "HomeDocurlCell", bundle: nil), forCellReuseIdentifier: "HomeDocurlCell")
 
-        viewModel = HomeViewModel()
-        bind()
-        viewModel.reload()
+        self.viewModel = HomeViewModel()
+        self.bind()
+        self.viewModel.reload()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -51,7 +51,7 @@ extension HomeViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let sectionType = TableViewASectionType(rawValue: section),
+        guard let sectionType = TableViewSectionType(rawValue: section),
             let sec = viewModel.homePage?[sectionType] else { return 0 }
         return sec.count
     }
@@ -62,7 +62,7 @@ extension HomeViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let sectionType = TableViewASectionType(rawValue: indexPath.section) else { return UITableViewCell() }
+        guard let sectionType = TableViewSectionType(rawValue: indexPath.section) else { return UITableViewCell() }
         switch sectionType {
         case .header:
             guard let homePageHeader = viewModel.homePage?[sectionType]?.first as? HomePageHeader,

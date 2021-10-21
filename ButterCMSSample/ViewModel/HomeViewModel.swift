@@ -10,7 +10,7 @@ import Combine
 
 class HomeViewModel {
     var errorMessage = PassthroughSubject<String, Never>()
-    @Published private(set) var homePage: [TableViewASectionType: [Any]]?
+    @Published private(set) var homePage: [TableViewSectionType: [Any]]?
     private var subscriptions = Set<AnyCancellable>()
 
     init () {

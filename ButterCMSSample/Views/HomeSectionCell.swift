@@ -30,13 +30,11 @@ class HomeSectionCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.content.backgroundColor = .clear
         self.content.layer.masksToBounds = false
         self.content.layer.shadowOpacity = 0.23
         self.content.layer.shadowRadius = 5
         self.content.layer.shadowOffset = CGSize(width: 0, height: 0)
         self.content.layer.shadowColor = UIColor.black.cgColor
-        self.content.backgroundColor = .white
         self.content.layer.cornerRadius = 10
         self.button.allowTextToScale()
         self.button.applyRoundCornders()

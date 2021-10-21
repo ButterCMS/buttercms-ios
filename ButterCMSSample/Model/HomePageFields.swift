@@ -23,7 +23,7 @@ struct HomePageHeader {
     var subheadline: String
 }
 
-enum TableViewASectionType: Int {
+enum TableViewSectionType: Int {
     case header
     case sections
     case docUrl
