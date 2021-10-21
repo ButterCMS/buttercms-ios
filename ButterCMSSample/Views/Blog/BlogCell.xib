@@ -24,31 +24,70 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moe-hi-mwp" userLabel="Content">
                                 <rect key="frame" x="0.0" y="0.0" width="717" height="352"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0lQ-a6-P5J">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="0lQ-a6-P5J">
                                         <rect key="frame" x="0.0" y="0.0" width="717" height="352"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QeL-kX-xeH">
-                                                <rect key="frame" x="0.0" y="0.0" width="717" height="120"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="717" height="160"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Blog" translatesAutoresizingMaskIntoConstraints="NO" id="Ysl-Z8-ZFj" userLabel="BlogLogo">
-                                                        <rect key="frame" x="-67" y="10" width="851" height="100"/>
+                                                        <rect key="frame" x="-67" y="30" width="851" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="3B9-gT-4Tr"/>
                                                         </constraints>
                                                     </imageView>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evh-Ei-zzh">
+                                                        <rect key="frame" x="10" y="136.5" width="47.5" height="18.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.9965673089" green="0.84176844360000003" blue="0.00017985481829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="Ysl-Z8-ZFj" firstAttribute="top" secondItem="QeL-kX-xeH" secondAttribute="top" constant="10" id="Zf4-c6-g8Y"/>
+                                                    <constraint firstItem="Ysl-Z8-ZFj" firstAttribute="top" secondItem="QeL-kX-xeH" secondAttribute="top" constant="30" id="Zf4-c6-g8Y"/>
+                                                    <constraint firstItem="evh-Ei-zzh" firstAttribute="leading" secondItem="QeL-kX-xeH" secondAttribute="leading" constant="10" id="acY-b9-4a5"/>
                                                     <constraint firstItem="Ysl-Z8-ZFj" firstAttribute="centerX" secondItem="QeL-kX-xeH" secondAttribute="centerX" id="gp7-dw-VRp"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Ysl-Z8-ZFj" secondAttribute="bottom" constant="10" id="uzg-qf-uMl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="evh-Ei-zzh" secondAttribute="bottom" constant="5" id="u6c-jt-xaG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ysl-Z8-ZFj" secondAttribute="bottom" constant="30" id="uzg-qf-uMl"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tm7-Cq-oLF">
-                                                <rect key="frame" x="0.0" y="120" width="717" height="232"/>
+                                                <rect key="frame" x="0.0" y="160" width="717" height="192"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TITLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="26y-hV-Deg">
+                                                        <rect key="frame" x="10" y="5" width="49" height="23"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="SUBTITLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ybs-lS-LyP">
+                                                        <rect key="frame" x="10" y="33" width="65.5" height="18.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TIME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fC-Wj-Dgu" userLabel="TIME">
+                                                        <rect key="frame" x="10" y="56.5" width="33" height="125.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="26y-hV-Deg" firstAttribute="leading" secondItem="Tm7-Cq-oLF" secondAttribute="leading" constant="10" id="87w-He-EGC"/>
+                                                    <constraint firstItem="9fC-Wj-Dgu" firstAttribute="leading" secondItem="Tm7-Cq-oLF" secondAttribute="leading" constant="10" id="8GR-x6-rAr"/>
+                                                    <constraint firstItem="ybs-lS-LyP" firstAttribute="top" secondItem="26y-hV-Deg" secondAttribute="bottom" constant="5" id="Uaj-81-zfa"/>
+                                                    <constraint firstItem="26y-hV-Deg" firstAttribute="top" secondItem="Tm7-Cq-oLF" secondAttribute="top" constant="5" id="VLm-Xf-mxQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9fC-Wj-Dgu" secondAttribute="bottom" constant="10" id="kzS-lL-AQN"/>
+                                                    <constraint firstItem="9fC-Wj-Dgu" firstAttribute="top" secondItem="ybs-lS-LyP" secondAttribute="bottom" constant="5" id="l5s-uu-Y0c"/>
+                                                    <constraint firstItem="ybs-lS-LyP" firstAttribute="leading" secondItem="Tm7-Cq-oLF" secondAttribute="leading" constant="10" id="lZG-xD-Qvw"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Tm7-Cq-oLF" secondAttribute="trailing" id="Hhp-oE-WAX"/>
+                                            <constraint firstItem="Tm7-Cq-oLF" firstAttribute="top" secondItem="QeL-kX-xeH" secondAttribute="bottom" id="Ilb-YG-OMa"/>
+                                            <constraint firstItem="Tm7-Cq-oLF" firstAttribute="leading" secondItem="0lQ-a6-P5J" secondAttribute="leading" id="rk1-ou-x9R"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tm7-Cq-oLF" secondAttribute="bottom" id="xOo-nh-oWv"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,8 +117,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="author" destination="evh-Ei-zzh" id="aB7-eL-3hR"/>
                 <outlet property="content" destination="moe-hi-mwp" id="iT7-PE-lNq"/>
                 <outlet property="shadow" destination="kKg-eG-Hgk" id="qWH-gR-fYG"/>
+                <outlet property="subTitle" destination="ybs-lS-LyP" id="Ive-5e-z8b"/>
+                <outlet property="time" destination="9fC-Wj-Dgu" id="oeD-uz-KUv"/>
+                <outlet property="title" destination="26y-hV-Deg" id="cXo-34-FBQ"/>
             </connections>
             <point key="canvasLocation" x="439.85507246376812" y="63.616071428571423"/>
         </tableViewCell>

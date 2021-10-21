@@ -10,7 +10,11 @@ import UIKit
 class BlogCell: UITableViewCell {
     @IBOutlet weak var content: UIView!
     @IBOutlet weak var shadow: UIView!
-
+    @IBOutlet weak var author: UITextField!
+    @IBOutlet weak var title: UITextField!
+    @IBOutlet weak var subTitle: UITextField!
+    @IBOutlet weak var time: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.shadow.layer.cornerRadius = 10

@@ -10,6 +10,8 @@
 		5608DC84271F18F300A88729 /* BlogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC82271F18F300A88729 /* BlogCell.swift */; };
 		5608DC85271F18F300A88729 /* BlogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5608DC83271F18F300A88729 /* BlogCell.xib */; };
 		5608DC872721374D00A88729 /* BlogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC862721374D00A88729 /* BlogViewModel.swift */; };
+		5608DC89272189D300A88729 /* DateFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC88272189D300A88729 /* DateFormatHelper.swift */; };
+		5608DC8B27218D8F00A88729 /* BacklogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5608DC8A27218D8F00A88729 /* BacklogDetail.storyboard */; };
 		563425C32707531500C621EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F7065F26C5A798006D1194 /* Assets.xcassets */; };
 		56C8AD9526F4880C0034A41F /* ButterCMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 56C8AD9426F4880C0034A41F /* ButterCMSSDK */; };
 		56C8AD9926F4A0DE0034A41F /* HomePageFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */; };
@@ -38,6 +40,8 @@
 		5608DC82271F18F300A88729 /* BlogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCell.swift; sourceTree = "<group>"; };
 		5608DC83271F18F300A88729 /* BlogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogCell.xib; sourceTree = "<group>"; };
 		5608DC862721374D00A88729 /* BlogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewModel.swift; sourceTree = "<group>"; };
+		5608DC88272189D300A88729 /* DateFormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatHelper.swift; sourceTree = "<group>"; };
+		5608DC8A27218D8F00A88729 /* BacklogDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BacklogDetail.storyboard; sourceTree = "<group>"; };
 		56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageFields.swift; sourceTree = "<group>"; };
 		56C8AD9C26F4A2AE0034A41F /* ButterCMSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterCMSManager.swift; sourceTree = "<group>"; };
 		56C8AD9F26F4C9720034A41F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			children = (
 				5608DC82271F18F300A88729 /* BlogCell.swift */,
 				5608DC83271F18F300A88729 /* BlogCell.xib */,
+				5608DC8A27218D8F00A88729 /* BacklogDetail.storyboard */,
 			);
 			path = Blog;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				56FD0B0227021A9400C595D5 /* UIButtonHelper.swift */,
+				5608DC88272189D300A88729 /* DateFormatHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 				56FD0B0727021CAC00C595D5 /* HomeDocurlCell.xib in Resources */,
 				56CD39BF26FCB4ED003B26E9 /* HomeSectionCell.xib in Resources */,
 				56C8ADA826F65F780034A41F /* HomeTitleCell.xib in Resources */,
+				5608DC8B27218D8F00A88729 /* BacklogDetail.storyboard in Resources */,
 				563425C32707531500C621EB /* Assets.xcassets in Resources */,
 				56F7065E26C5A795006D1194 /* Main.storyboard in Resources */,
 			);
@@ -304,6 +311,7 @@
 				56FD0B0327021A9400C595D5 /* UIButtonHelper.swift in Sources */,
 				56EE670E26F0E5A700108698 /* BlogViewController.swift in Sources */,
 				56F7065B26C5A795006D1194 /* ViewController.swift in Sources */,
+				5608DC89272189D300A88729 /* DateFormatHelper.swift in Sources */,
 				56FD0B0627021CAC00C595D5 /* HomeDocurlCell.swift in Sources */,
 				56EE671026F0E5BF00108698 /* PagesViewController.swift in Sources */,
 				56C8ADA726F65F780034A41F /* HomeTitleCell.swift in Sources */,

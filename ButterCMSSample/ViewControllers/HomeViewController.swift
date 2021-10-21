@@ -10,7 +10,6 @@ import Combine
 
 class HomeViewController: UITableViewController {
     private var viewModel: HomeViewModel!
-    private let homeHeaderCellId = "HomeHeaderCell"
     private var subscriptions = Set<AnyCancellable>()
 
     override func viewDidLoad() {
@@ -23,14 +22,14 @@ class HomeViewController: UITableViewController {
         self.bind()
         self.viewModel.reload()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
     }
 
     func bind() {
-        viewModel.$homePage.receive(on: DispatchQueue.main).sink { [weak self] _ in
-            self?.tableView.reloadData()
-        }.store(in: &subscriptions)
+        viewModel.$homePage.receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.tableView.reloadData()
+            }
+            .store(in: &subscriptions)
 
         viewModel.errorMessage
             .receive(on: DispatchQueue.main)
