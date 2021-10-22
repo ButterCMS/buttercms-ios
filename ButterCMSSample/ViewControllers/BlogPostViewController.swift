@@ -22,6 +22,16 @@ class BlogPostViewController: UIViewController {
     var slug: String?
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let js = """
+                    document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust='\(250)%'
+                 """
+        let userScript = WKUserScript(source: js,
+                                      injectionTime: .atDocumentEnd,
+                                      forMainFrameOnly: true)
+        postView.configuration.userContentController.addUserScript(userScript)
+
         self.viewModel = PostViewModel()
         if let slug = self.slug {
             self.viewModel.loadPost(slug: slug)
