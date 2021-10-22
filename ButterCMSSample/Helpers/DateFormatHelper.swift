@@ -11,4 +11,9 @@ extension DateFormatter {
        self.init()
        self.dateFormat = dateFormat
     }
+
+    func string(fromOptional: Date?, dafualtValue: String = "") -> String? {
+        guard let date = fromOptional else { return dafualtValue }
+        return self.string(from: date)
+    }
 }

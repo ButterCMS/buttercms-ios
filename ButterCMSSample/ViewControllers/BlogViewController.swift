@@ -22,10 +22,17 @@ class BlogViewController: UITableViewController {
         self.viewModel.reload()
     }
 
-    func bind() {
+    private func bind() {
         viewModel.$posts.receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
                 self?.tableView.reloadData()
+            }
+            .store(in: &subscriptions)
+
+        viewModel.errorMessage
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] message in
+                self?.showErrorAllert(message: message)
             }
             .store(in: &subscriptions)
     }
@@ -47,18 +54,20 @@ extension BlogViewController {
         else {
             return UITableViewCell()
         }
-
         cell.author.text = "\(post.author?.firstName ?? "") \(post.author?.lastName ?? "")"
         cell.title.text = post.title
         cell.subTitle.text = post.slug
-
-        if let date = post.published {
-            let dateString = dateFormatter.string(from: date)
-
-            cell.time.text = dateString
-        } else {
-            cell.time.text = ""
-        }
+        cell.time.text = dateFormatter.string(fromOptional: post.published)
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let post = viewModel.posts?[indexPath.row] else { return }
+        if let postVC = UIStoryboard(name: "BacklogDetail", bundle: nil)
+            .instantiateViewController(withIdentifier: "BlogPostViewControllerID") as? BlogPostViewController {
+                postVC.slug = post.slug
+            self.navigationController?.show(postVC, sender: self)
+            }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

@@ -24,7 +24,7 @@ class HomeViewController: UITableViewController {
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
 
-    func bind() {
+    private func bind() {
         viewModel.$homePage.receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
                 self?.tableView.reloadData()
@@ -34,13 +34,9 @@ class HomeViewController: UITableViewController {
         viewModel.errorMessage
             .receive(on: DispatchQueue.main)
             .sink { [weak self] message in
-            let alert = UIAlertController(title: "Error!", message: message, preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { _ in }
-            alert.addAction(alertAction)
-            self?.present(alert, animated: true) {
-                () -> Void in
+                self?.showErrorAllert(message: message)
             }
-        }.store(in: &subscriptions)
+            .store(in: &subscriptions)
     }
 }
 
