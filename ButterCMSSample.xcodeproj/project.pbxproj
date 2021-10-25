@@ -15,6 +15,13 @@
 		5608DC8D27218FBA00A88729 /* BlogPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC8C27218FBA00A88729 /* BlogPostViewController.swift */; };
 		5608DC8F2721A3D800A88729 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC8E2721A3D800A88729 /* PostViewModel.swift */; };
 		5608DC912721AF8700A88729 /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC902721AF8700A88729 /* ViewControllerHelper.swift */; };
+		5608DC952722F72A00A88729 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC932722F72900A88729 /* PageCell.swift */; };
+		5608DC962722F72A00A88729 /* PageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5608DC942722F72900A88729 /* PageCell.xib */; };
+		5608DC982722F7A400A88729 /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC972722F7A400A88729 /* PageViewModel.swift */; };
+		5608DC9A2722F84500A88729 /* PagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC992722F84500A88729 /* PagesViewModel.swift */; };
+		5608DC9C2722F8DD00A88729 /* CaseStudyPageFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608DC9B2722F8DD00A88729 /* CaseStudyPageFields.swift */; };
+		5618169727269A85002873B3 /* PageDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5618169627269A85002873B3 /* PageDetail.storyboard */; };
+		561816992726A0A4002873B3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561816982726A0A4002873B3 /* PageViewController.swift */; };
 		563425C32707531500C621EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F7065F26C5A798006D1194 /* Assets.xcassets */; };
 		56C8AD9526F4880C0034A41F /* ButterCMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 56C8AD9426F4880C0034A41F /* ButterCMSSDK */; };
 		56C8AD9926F4A0DE0034A41F /* HomePageFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */; };
@@ -28,6 +35,7 @@
 		56EE670E26F0E5A700108698 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EE670D26F0E5A700108698 /* BlogViewController.swift */; };
 		56EE671026F0E5BF00108698 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EE670F26F0E5BF00108698 /* PagesViewController.swift */; };
 		56EE671226F0E5D600108698 /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EE671126F0E5D600108698 /* CollectionsViewController.swift */; };
+		56EF16BD272473220064F329 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF16BC272473220064F329 /* ImageHelper.swift */; };
 		56F7065726C5A795006D1194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F7065626C5A795006D1194 /* AppDelegate.swift */; };
 		56F7065926C5A795006D1194 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F7065826C5A795006D1194 /* SceneDelegate.swift */; };
 		56F7065B26C5A795006D1194 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F7065A26C5A795006D1194 /* ViewController.swift */; };
@@ -48,6 +56,13 @@
 		5608DC8C27218FBA00A88729 /* BlogPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostViewController.swift; sourceTree = "<group>"; };
 		5608DC8E2721A3D800A88729 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		5608DC902721AF8700A88729 /* ViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
+		5608DC932722F72900A88729 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		5608DC942722F72900A88729 /* PageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageCell.xib; sourceTree = "<group>"; };
+		5608DC972722F7A400A88729 /* PageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
+		5608DC992722F84500A88729 /* PagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewModel.swift; sourceTree = "<group>"; };
+		5608DC9B2722F8DD00A88729 /* CaseStudyPageFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudyPageFields.swift; sourceTree = "<group>"; };
+		5618169627269A85002873B3 /* PageDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PageDetail.storyboard; sourceTree = "<group>"; };
+		561816982726A0A4002873B3 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageFields.swift; sourceTree = "<group>"; };
 		56C8AD9C26F4A2AE0034A41F /* ButterCMSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterCMSManager.swift; sourceTree = "<group>"; };
 		56C8AD9F26F4C9720034A41F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -59,6 +74,7 @@
 		56EE670D26F0E5A700108698 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		56EE670F26F0E5BF00108698 /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 		56EE671126F0E5D600108698 /* CollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		56EF16BC272473220064F329 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		56F7065326C5A795006D1194 /* ButterCMSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterCMSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F7065626C5A795006D1194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56F7065826C5A795006D1194 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +124,16 @@
 			path = Blog;
 			sourceTree = "<group>";
 		};
+		5608DC922722F70400A88729 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				5608DC932722F72900A88729 /* PageCell.swift */,
+				5608DC942722F72900A88729 /* PageCell.xib */,
+				5618169627269A85002873B3 /* PageDetail.storyboard */,
+			);
+			name = Page;
+			sourceTree = "<group>";
+		};
 		563425C4270753A900C621EB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +145,7 @@
 		56C8AD9626F48D350034A41F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5608DC922722F70400A88729 /* Page */,
 				5608DC81271F187D00A88729 /* Blog */,
 				5608DC80271F186200A88729 /* Home */,
 				56F7065C26C5A795006D1194 /* Main.storyboard */,
@@ -130,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */,
+				5608DC9B2722F8DD00A88729 /* CaseStudyPageFields.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +176,8 @@
 				56C8AD9F26F4C9720034A41F /* HomeViewModel.swift */,
 				5608DC862721374D00A88729 /* BlogViewModel.swift */,
 				5608DC8E2721A3D800A88729 /* PostViewModel.swift */,
+				5608DC972722F7A400A88729 /* PageViewModel.swift */,
+				5608DC992722F84500A88729 /* PagesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -161,6 +191,7 @@
 				56EE670F26F0E5BF00108698 /* PagesViewController.swift */,
 				56EE671126F0E5D600108698 /* CollectionsViewController.swift */,
 				56FD0AFF2700A42800C595D5 /* WebViewController.swift */,
+				561816982726A0A4002873B3 /* PageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -206,6 +237,7 @@
 				56FD0B0227021A9400C595D5 /* UIButtonHelper.swift */,
 				5608DC88272189D300A88729 /* DateFormatHelper.swift */,
 				5608DC902721AF8700A88729 /* ViewControllerHelper.swift */,
+				56EF16BC272473220064F329 /* ImageHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -274,11 +306,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5618169727269A85002873B3 /* PageDetail.storyboard in Resources */,
 				56F7066326C5A798006D1194 /* LaunchScreen.storyboard in Resources */,
 				5608DC85271F18F300A88729 /* BlogCell.xib in Resources */,
 				56FD0B0727021CAC00C595D5 /* HomeDocurlCell.xib in Resources */,
 				56CD39BF26FCB4ED003B26E9 /* HomeSectionCell.xib in Resources */,
 				56C8ADA826F65F780034A41F /* HomeTitleCell.xib in Resources */,
+				5608DC962722F72A00A88729 /* PageCell.xib in Resources */,
 				5608DC8B27218D8F00A88729 /* BacklogDetail.storyboard in Resources */,
 				563425C32707531500C621EB /* Assets.xcassets in Resources */,
 				56F7065E26C5A795006D1194 /* Main.storyboard in Resources */,
@@ -315,11 +349,15 @@
 				5608DC8F2721A3D800A88729 /* PostViewModel.swift in Sources */,
 				56C8AD9D26F4A2AE0034A41F /* ButterCMSManager.swift in Sources */,
 				56EE671226F0E5D600108698 /* CollectionsViewController.swift in Sources */,
+				5608DC9A2722F84500A88729 /* PagesViewModel.swift in Sources */,
 				56CD39BE26FCB4ED003B26E9 /* HomeSectionCell.swift in Sources */,
 				56EE670C26F0E40C00108698 /* HomeViewController.swift in Sources */,
 				56C8ADA026F4C9720034A41F /* HomeViewModel.swift in Sources */,
+				5608DC952722F72A00A88729 /* PageCell.swift in Sources */,
 				56FD0B0327021A9400C595D5 /* UIButtonHelper.swift in Sources */,
 				56EE670E26F0E5A700108698 /* BlogViewController.swift in Sources */,
+				5608DC982722F7A400A88729 /* PageViewModel.swift in Sources */,
+				561816992726A0A4002873B3 /* PageViewController.swift in Sources */,
 				56F7065B26C5A795006D1194 /* ViewController.swift in Sources */,
 				5608DC89272189D300A88729 /* DateFormatHelper.swift in Sources */,
 				5608DC8D27218FBA00A88729 /* BlogPostViewController.swift in Sources */,
@@ -329,6 +367,8 @@
 				56F7065726C5A795006D1194 /* AppDelegate.swift in Sources */,
 				5608DC872721374D00A88729 /* BlogViewModel.swift in Sources */,
 				56F7065926C5A795006D1194 /* SceneDelegate.swift in Sources */,
+				5608DC9C2722F8DD00A88729 /* CaseStudyPageFields.swift in Sources */,
+				56EF16BD272473220064F329 /* ImageHelper.swift in Sources */,
 				5608DC912721AF8700A88729 /* ViewControllerHelper.swift in Sources */,
 				5608DC84271F18F300A88729 /* BlogCell.swift in Sources */,
 				56FD0B002700A42800C595D5 /* WebViewController.swift in Sources */,

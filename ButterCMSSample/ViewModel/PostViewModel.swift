@@ -6,19 +6,17 @@
 //
 
 import Foundation
-
 import ButterCMSSDK
 import Combine
 
 class PostViewModel {
-    var errorMessage = PassthroughSubject<String, Never>()
-
     @Published private(set) var author = ""
     @Published private(set) var title = ""
     @Published private(set) var slug = ""
     @Published private(set) var time = ""
     @Published private(set) var body = ""
 
+    var errorMessage = PassthroughSubject<String, Never>()
     private var subscriptions = Set<AnyCancellable>()
 
     init() {

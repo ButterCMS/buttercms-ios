@@ -48,11 +48,13 @@ class BlogPostViewController: UIViewController {
             viewModel.$slug.receive(on: DispatchQueue.main).sink { [weak self] value in self?.subTitle.text = value },
             viewModel.$time.receive(on: DispatchQueue.main).sink { [weak self] value in self?.time.text = value }
         ]
+        
         viewModel.$body.receive(on: DispatchQueue.main)
             .sink { [weak self] value in
                 self?.postView.loadHTMLString(value, baseURL: nil)
             }
             .store(in: &subscriptions)
+
         viewModel.errorMessage
             .receive(on: DispatchQueue.main)
             .sink { [weak self] message in

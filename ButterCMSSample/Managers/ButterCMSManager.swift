@@ -12,6 +12,8 @@ class ButterCMSManager {
     static var shared = ButterCMSManager()
     let butter = ButterCMSClient(apiKey: "3606556ecbd4134ea24b8936a829ab9edaddb583")
     let homePageSubject = PassthroughSubject<PageResponse<HomePageFields>, Error>()
+    let caseStudyPagesSubject = PassthroughSubject<PagesResponse<CaseStudyPageFields>, Error>()
+    let caseStudyPageSubject = PassthroughSubject<PageResponse<CaseStudyPageFields>, Error>()
     let blogSubject = PassthroughSubject<PostsResponse, Error>()
     let postSubject = PassthroughSubject<PostResponse, Error>()
     
@@ -44,6 +46,28 @@ class ButterCMSManager {
                 self.postSubject.send(post)
             case .failure(let error):
                 self.postSubject.send(completion: .failure(error))
+            }
+        }
+    }
+
+    func getPages() {
+        butter.getPages(parameters: [.locale(value: "en")], pageTypeSlug: "case_studies", type: CaseStudyPageFields.self) { result in
+            switch result {
+            case .success(let pages):
+                self.caseStudyPagesSubject.send(pages)
+            case .failure(let error):
+                self.caseStudyPagesSubject.send(completion: .failure(error))
+            }
+        }
+    }
+
+    func getPage(slug: String) {
+        butter.getPage(slug: slug, parameters: [.locale(value: "en")], pageTypeSlug: "case_studies", type: CaseStudyPageFields.self) { result in
+            switch result {
+            case .success(let page):
+                self.caseStudyPageSubject.send(page)
+            case .failure(let error):
+                self.caseStudyPageSubject.send(completion: .failure(error))
             }
         }
     }

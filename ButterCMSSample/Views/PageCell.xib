@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="614" id="KGk-i7-Jjw" customClass="PageCell" customModule="ButterCMSSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="810" height="614"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="810" height="614"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zba-3N-Ncl" userLabel="Shadow">
+                        <rect key="frame" x="5" y="10" width="800" height="594"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nm-4u-JLm" userLabel="Content">
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="594"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="td0-2p-k6e">
+                                        <rect key="frame" x="0.0" y="0.0" width="800" height="594"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="img_page_featured" translatesAutoresizingMaskIntoConstraints="NO" id="Hgi-NF-lvM" userLabel="image">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="594"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="A0U-Wg-UMz"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Pna-ao-Bw7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-40-EFL">
+                                                <rect key="frame" x="100" y="0.0" width="700" height="594"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="753" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NS-FL-4T7" userLabel="Title">
+                                                        <rect key="frame" x="0.0" y="0.0" width="700" height="557"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <string key="text">TITLE fdsfsdf f fsd fsdfs fsdfdsfsdf fdsfsdfsdfs f fsfdsf dsffsdfsd das d d d das  sdadasdasda  dsadadad sadadadasd saddasdadad dsadasdada</string>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="STUDY DATE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoS-yR-W3S">
+                                                        <rect key="frame" x="0.0" y="557" width="700" height="18.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="REVIEWED BY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gsr-tm-82e">
+                                                        <rect key="frame" x="0.0" y="575.5" width="700" height="18.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="4NS-FL-4T7" firstAttribute="leading" secondItem="6gO-40-EFL" secondAttribute="leading" id="bb5-hw-edI"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="td0-2p-k6e" firstAttribute="leading" secondItem="5Nm-4u-JLm" secondAttribute="leading" id="7Bb-3b-wQ5"/>
+                                    <constraint firstAttribute="trailing" secondItem="td0-2p-k6e" secondAttribute="trailing" id="dhe-ML-Hk9"/>
+                                    <constraint firstAttribute="bottom" secondItem="td0-2p-k6e" secondAttribute="bottom" id="jlb-qb-RgF"/>
+                                    <constraint firstItem="td0-2p-k6e" firstAttribute="top" secondItem="5Nm-4u-JLm" secondAttribute="top" id="wGD-ep-FNc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Nm-4u-JLm" secondAttribute="trailing" id="5cA-i8-FY6"/>
+                            <constraint firstItem="5Nm-4u-JLm" firstAttribute="leading" secondItem="zba-3N-Ncl" secondAttribute="leading" id="Hzx-26-6Cf"/>
+                            <constraint firstItem="5Nm-4u-JLm" firstAttribute="top" secondItem="zba-3N-Ncl" secondAttribute="top" id="dNK-rl-UTK"/>
+                            <constraint firstAttribute="bottom" secondItem="5Nm-4u-JLm" secondAttribute="bottom" id="qPL-Kq-IHd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zba-3N-Ncl" secondAttribute="bottom" constant="10" id="4JO-JW-xNT"/>
+                    <constraint firstAttribute="trailing" secondItem="zba-3N-Ncl" secondAttribute="trailing" constant="5" id="FBG-Dw-4lR"/>
+                    <constraint firstItem="zba-3N-Ncl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="UnX-I4-FZb"/>
+                    <constraint firstItem="zba-3N-Ncl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lhk-w8-GlJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="content" destination="5Nm-4u-JLm" id="vkQ-O9-OVD"/>
+                <outlet property="pageImage" destination="Hgi-NF-lvM" id="QiK-TS-xKa"/>
+                <outlet property="reviewedBy" destination="Gsr-tm-82e" id="PoK-23-8nV"/>
+                <outlet property="shadow" destination="zba-3N-Ncl" id="mOM-ss-BKO"/>
+                <outlet property="studyDate" destination="hoS-yR-W3S" id="H7z-fo-wPD"/>
+                <outlet property="title" destination="4NS-FL-4T7" id="CRn-Up-7I9"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="73.660714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_page_featured" width="822" height="401"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrS-wV-c1z">
-                        <rect key="frame" x="20" y="10" width="280" height="29"/>
+                        <rect key="frame" x="20" y="10" width="280" height="24"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -32,6 +32,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="WrS-wV-c1z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4cP-fc-Bie"/>
+                    <constraint firstAttribute="bottom" secondItem="WrS-wV-c1z" secondAttribute="bottom" constant="10" id="KTl-WN-hq2"/>
                     <constraint firstAttribute="trailing" secondItem="WrS-wV-c1z" secondAttribute="trailing" constant="20" id="rWr-Yz-bAx"/>
                     <constraint firstItem="WrS-wV-c1z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="u7x-8s-fMS"/>
                 </constraints>

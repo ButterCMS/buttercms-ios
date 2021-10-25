@@ -42,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="156.5" height="25"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="KGb-rE-FJb"/>
+                                            <constraint firstAttribute="height" constant="25" identifier="previewIntegration.height" id="KGb-rE-FJb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -57,7 +57,7 @@
                                         <rect key="frame" x="166.5" y="0.0" width="111.5" height="25"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="oV4-Cx-sBx"/>
+                                            <constraint firstAttribute="height" constant="25" identifier="learMore.height" id="oV4-Cx-sBx"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="LEARN MORE"/>
@@ -66,9 +66,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="fdP-sn-J86" firstAttribute="leading" secondItem="8ak-E2-enm" secondAttribute="trailing" constant="5" id="IPk-6V-BCd"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
