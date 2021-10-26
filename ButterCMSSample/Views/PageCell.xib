@@ -24,7 +24,7 @@
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nm-4u-JLm" userLabel="Content">
                                 <rect key="frame" x="0.0" y="0.0" width="800" height="594"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="td0-2p-k6e">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="td0-2p-k6e">
                                         <rect key="frame" x="0.0" y="0.0" width="800" height="594"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="img_page_featured" translatesAutoresizingMaskIntoConstraints="NO" id="Hgi-NF-lvM" userLabel="image">
@@ -35,10 +35,10 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-40-EFL">
-                                                <rect key="frame" x="100" y="0.0" width="700" height="594"/>
+                                                <rect key="frame" x="110" y="0.0" width="690" height="594"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="753" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NS-FL-4T7" userLabel="Title">
-                                                        <rect key="frame" x="0.0" y="0.0" width="700" height="557"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="690" height="557"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <string key="text">TITLE fdsfsdf f fsd fsdfs fsdfdsfsdf fdsfsdfsdfs f fsfdsf dsffsdfsd das d d d das  sdadasdasda  dsadadad sadadadasd saddasdadad dsadasdada</string>
                                                         <color key="textColor" systemColor="labelColor"/>
@@ -46,12 +46,12 @@
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="STUDY DATE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoS-yR-W3S">
-                                                        <rect key="frame" x="0.0" y="557" width="700" height="18.5"/>
+                                                        <rect key="frame" x="0.0" y="557" width="690" height="18.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="REVIEWED BY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gsr-tm-82e">
-                                                        <rect key="frame" x="0.0" y="575.5" width="700" height="18.5"/>
+                                                        <rect key="frame" x="0.0" y="575.5" width="690" height="18.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>

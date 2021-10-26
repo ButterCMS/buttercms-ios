@@ -51,7 +51,9 @@ class BlogPostViewController: UIViewController {
         
         viewModel.$body.receive(on: DispatchQueue.main)
             .sink { [weak self] value in
-                self?.postView.loadHTMLString(value, baseURL: nil)
+                if let value = value {
+                    self?.postView.loadHTMLString(value, baseURL: nil)
+                }
             }
             .store(in: &subscriptions)
 

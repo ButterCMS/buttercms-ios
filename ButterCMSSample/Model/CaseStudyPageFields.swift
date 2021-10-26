@@ -16,7 +16,7 @@ struct CaseStudyPageFields: Codable {
     var subindustry: String
     var featuredImage: String
     var reviewer: String
-    // var studyDate: Date
+    var studyDate: Date
 }
 
 class CaseStudyPage {

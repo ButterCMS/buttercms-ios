@@ -10,7 +10,6 @@ import Combine
 import UIKit
 
 class PagesViewModel {
-    // @Published private(set) var pages: [Page<CaseStudyPageFields>]?
     @Published private(set) var pages: [CaseStudyPage]?
     var errorMessage = PassthroughSubject<String, Never>()
     private var subscriptions = Set<AnyCancellable>()
@@ -18,27 +17,28 @@ class PagesViewModel {
     init() {
         ButterCMSManager.shared.caseStudyPagesSubject
             .compactMap { value in
-                 value.data.compactMap { page in
+                value.data.compactMap { page in
                     let pageData = CaseStudyPage(pageData: page, image: nil)
-                    guard let url = URL(string: page.fields.featuredImage) else { return nil }
-                    let dataTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
-                        if let data = data {
-                            pageData.image = UIImage(data: data)
+                    if let url = URL(string: page.fields.featuredImage) {
+                        let dataTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
+                            if let data = data {
+                                pageData.image = UIImage(data: data)
+                            }
                         }
+                        dataTask.resume()
                     }
-                    dataTask.resume()
                     return pageData
                 }
             }
             .sink(
                 receiveCompletion: { completion in
-                        switch completion {
-                        case .finished: break
-                        case .failure(let error): self.errorMessage.send(error.localizedDescription)
-                        }
-                    },
+                    switch completion {
+                    case .finished: break
+                    case .failure(let error): self.errorMessage.send(error.localizedDescription)
+                    }
+                },
                 receiveValue: { [weak self] value in self?.pages = value }
-                )
+            )
             .store(in: &subscriptions)
 
     }

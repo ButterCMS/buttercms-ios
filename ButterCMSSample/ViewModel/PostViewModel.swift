@@ -10,11 +10,11 @@ import ButterCMSSDK
 import Combine
 
 class PostViewModel {
-    @Published private(set) var author = ""
-    @Published private(set) var title = ""
-    @Published private(set) var slug = ""
-    @Published private(set) var time = ""
-    @Published private(set) var body = ""
+    @Published private(set) var author: String?
+    @Published private(set) var title: String?
+    @Published private(set) var slug: String?
+    @Published private(set) var time: String?
+    @Published private(set) var body: String?
 
     var errorMessage = PassthroughSubject<String, Never>()
     private var subscriptions = Set<AnyCancellable>()
@@ -33,7 +33,7 @@ class PostViewModel {
                     self?.title = value.data.title
                     self?.slug = value.data.slug
                     let dateFormatter = DateFormatter(dateFormat: "MMM-dd-yyyy")
-                    self?.time = dateFormatter.string(fromOptional: value.data.published) ?? ""
+                    self?.time = dateFormatter.string(fromOptional: value.data.published)
                     if let body = value.data.body {
                         self?.body = body
                     } else {

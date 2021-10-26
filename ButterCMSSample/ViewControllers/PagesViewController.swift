@@ -11,6 +11,7 @@ import Combine
 class PagesViewController: UITableViewController {
     private var viewModel: PagesViewModel!
     private var subscriptions = Set<AnyCancellable>()
+    private let dateFormater = DateFormatter(dateFormat: "MMM-dd-yyyy")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,6 @@ class PagesViewController: UITableViewController {
             }
             .store(in: &subscriptions)
     }
-
 }
 
 extension PagesViewController {
@@ -66,6 +66,7 @@ extension PagesViewController {
         cell.title.text = page.data.fields.title
         cell.reviewedBy.text = page.data.fields.reviewer
         cell.pageImage.image = page.image
+        cell.studyDate.text = dateFormater.string(fromOptional: page.data.fields.studyDate)
         return cell
     }
 }
