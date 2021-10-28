@@ -8,9 +8,10 @@
 import ButterCMSSDK
 import Combine
 import UIKit
+import AlamofireImage
 
 class PagesViewModel {
-    @Published private(set) var pages: [CaseStudyPage]?
+    @Published private(set) var pages: [PageCellViewModel]?
     var errorMessage = PassthroughSubject<String, Never>()
     private var subscriptions = Set<AnyCancellable>()
 
@@ -18,16 +19,7 @@ class PagesViewModel {
         ButterCMSManager.shared.caseStudyPagesSubject
             .compactMap { value in
                 value.data.compactMap { page in
-                    let pageData = CaseStudyPage(pageData: page, image: nil)
-                    if let url = URL(string: page.fields.featuredImage) {
-                        let dataTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
-                            if let data = data {
-                                pageData.image = UIImage(data: data)
-                            }
-                        }
-                        dataTask.resume()
-                    }
-                    return pageData
+                    PageCellViewModel(page: page)
                 }
             }
             .sink(
@@ -45,5 +37,22 @@ class PagesViewModel {
 
     func reload() {
         ButterCMSManager.shared.getPages()
+    }
+}
+
+class PageCellViewModel {
+    var title: String
+    var studyDate: String
+    var reviewedBy: String
+    var imageLink: String
+    var slug: String
+    private let dateFormatter = DateFormatter(dateFormat: "MMM-dd-yyyy")
+    
+    init (page: Page<CaseStudyPageFields>) {
+        self.slug = page.slug
+        self.title = page.fields.title
+        self.studyDate = dateFormatter.string(from: page.fields.studyDate)
+        self.reviewedBy = page.fields.reviewer
+        self.imageLink = page.fields.featuredImage
     }
 }

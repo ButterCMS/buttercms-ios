@@ -27,6 +27,7 @@
 		5618169F27281D82002873B3 /* FaqCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618169E27281D82002873B3 /* FaqCollectionViewModel.swift */; };
 		561816A527282123002873B3 /* CollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561816A327282123002873B3 /* CollectionItemCell.swift */; };
 		561816A627282123002873B3 /* CollectionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561816A427282123002873B3 /* CollectionItemCell.xib */; };
+		561816A9272AF059002873B3 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 561816A8272AF059002873B3 /* AlamofireImage */; };
 		563425C32707531500C621EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F7065F26C5A798006D1194 /* Assets.xcassets */; };
 		56C8AD9526F4880C0034A41F /* ButterCMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 56C8AD9426F4880C0034A41F /* ButterCMSSDK */; };
 		56C8AD9926F4A0DE0034A41F /* HomePageFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */; };
@@ -103,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56C8AD9526F4880C0034A41F /* ButterCMSSDK in Frameworks */,
+				561816A9272AF059002873B3 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +283,7 @@
 			name = ButterCMSSample;
 			packageProductDependencies = (
 				56C8AD9426F4880C0034A41F /* ButterCMSSDK */,
+				561816A8272AF059002873B3 /* AlamofireImage */,
 			);
 			productName = ButterCMSSample;
 			productReference = 56F7065326C5A795006D1194 /* ButterCMSSample.app */;
@@ -311,6 +314,7 @@
 			mainGroup = 56F7064A26C5A794006D1194;
 			packageReferences = (
 				56C8AD9326F4880C0034A41F /* XCRemoteSwiftPackageReference "buttercms-swift" */,
+				561816A7272AF059002873B3 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 56F7065426C5A795006D1194 /* Products */;
 			projectDirPath = "";
@@ -604,6 +608,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		561816A7272AF059002873B3 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		56C8AD9326F4880C0034A41F /* XCRemoteSwiftPackageReference "buttercms-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ButterCMS/buttercms-swift.git";
@@ -615,6 +627,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		561816A8272AF059002873B3 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 561816A7272AF059002873B3 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
 		56C8AD9426F4880C0034A41F /* ButterCMSSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 56C8AD9326F4880C0034A41F /* XCRemoteSwiftPackageReference "buttercms-swift" */;

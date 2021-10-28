@@ -92,7 +92,6 @@ extension HomeViewController {
                 default:
                     break
                 }
-
             }
             .store(in: &subscriptions)
             return cell

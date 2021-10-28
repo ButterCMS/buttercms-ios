@@ -51,7 +51,7 @@ extension PagesViewController {
         guard let page = viewModel.pages?[indexPath.row] else { return }
         if let pageVC = UIStoryboard(name: "PageDetail", bundle: nil)
             .instantiateViewController(withIdentifier: "CaseStudyPageDetailID") as? PageViewController {
-            pageVC.slug = page.data.slug
+            pageVC.slug = page.slug
             self.navigationController?.show(pageVC, sender: self)
         }
         tableView.deselectRow(at: indexPath, animated: true)
@@ -63,10 +63,22 @@ extension PagesViewController {
         else {
             return UITableViewCell()
         }
-        cell.title.text = page.data.fields.title
-        cell.reviewedBy.text = page.data.fields.reviewer
-        cell.pageImage.image = page.image
-        cell.studyDate.text = dateFormater.string(fromOptional: page.data.fields.studyDate)
+        cell.title.text = page.title
+        cell.reviewedBy.text = page.reviewedBy
+        if let url = URL(string: page.imageLink) {
+            cell.pageImage.af.setImage(
+            withURL: url,
+            placeholderImage: UIImage(named: "img_page_featured"),
+            filter: nil,
+            imageTransition: UIImageView.ImageTransition.crossDissolve(0.5),
+            runImageTransitionIfCached: false) { response in
+                    if response.response != nil {
+                        self.tableView.beginUpdates()
+                        self.tableView.endUpdates()
+                    }
+            }
+        }
+        cell.studyDate.text = page.studyDate
         return cell
     }
 }

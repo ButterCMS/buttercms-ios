@@ -18,11 +18,6 @@ class PageCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
         self.shadow.layer.cornerRadius = 10
         self.shadow.layer.shadowColor = UIColor.black.cgColor
         self.shadow.layer.shadowOffset = CGSize(width: 0, height: 0)

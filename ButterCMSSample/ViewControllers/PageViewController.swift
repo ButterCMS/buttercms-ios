@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import AlamofireImage
 
 class PageViewController: UIViewController {
 
@@ -42,7 +43,16 @@ class PageViewController: UIViewController {
             viewModel.$industry.receive(on: DispatchQueue.main).sink { [weak self] value in self?.industry.text = value },
             viewModel.$reviewedBy.receive(on: DispatchQueue.main).sink { [weak self] value in self?.reviewedBy.text = value },
             viewModel.$content.receive(on: DispatchQueue.main).sink { [weak self] value in self?.content.text = value },
-            viewModel.$image.receive(on: DispatchQueue.main).sink { [weak self] value in self?.image.image = value }
+            viewModel.$imageLink.receive(on: DispatchQueue.main).sink { [weak self] value in
+                if  let link = value,
+                    let url = URL(string: link) {
+                    self?.image.af.setImage(
+                        withURL: url,
+                        placeholderImage: UIImage(named: "img_page_featured")
+                    )
+                    self?.image.layer.cornerRadius = 10
+                }
+            }
         ]
     }
 

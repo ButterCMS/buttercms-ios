@@ -16,7 +16,7 @@ class PageViewModel {
     @Published private(set) var subindustry: String?
     @Published private(set) var reviewedBy: String?
     @Published private(set) var studyDate: String?
-    @Published private(set) var image: UIImage?
+    @Published private(set) var imageLink: String?
 
     private var errorMessage = PassthroughSubject<String, Never>()
     private var subscriptions = Set<AnyCancellable>()
@@ -38,14 +38,7 @@ class PageViewModel {
                     self?.subindustry = value.data.fields.subindustry
                     self?.reviewedBy = value.data.fields.reviewer
                     self?.studyDate = self?.dateFormatter.string(fromOptional: value.data.fields.studyDate)
-                    if let url = URL(string: value.data.fields.featuredImage) {
-                        let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, _, _) in
-                            if let data = data {
-                                self?.image = UIImage(data: data)
-                            }
-                        }
-                        dataTask.resume()
-                    }
+                    self?.imageLink = value.data.fields.featuredImage
                 }
             )
             .store(in: &subscriptions)

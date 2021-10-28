@@ -18,12 +18,3 @@ struct CaseStudyPageFields: Codable {
     var reviewer: String
     var studyDate: Date
 }
-
-class CaseStudyPage {
-    init (pageData: Page<CaseStudyPageFields>, image: UIImage?) {
-        self.data = pageData
-        self .image = image
-    }
-    var data: Page<CaseStudyPageFields>
-    var image: UIImage?
-}
