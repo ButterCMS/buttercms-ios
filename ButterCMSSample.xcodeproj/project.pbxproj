@@ -23,6 +23,10 @@
 		5618169727269A85002873B3 /* PageDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5618169627269A85002873B3 /* PageDetail.storyboard */; };
 		561816992726A0A4002873B3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561816982726A0A4002873B3 /* PageViewController.swift */; };
 		5618169B2726C3C3002873B3 /* UIScrallViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618169A2726C3C3002873B3 /* UIScrallViewHelper.swift */; };
+		5618169D27281BD6002873B3 /* FaqCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618169C27281BD6002873B3 /* FaqCollectionItem.swift */; };
+		5618169F27281D82002873B3 /* FaqCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618169E27281D82002873B3 /* FaqCollectionViewModel.swift */; };
+		561816A527282123002873B3 /* CollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561816A327282123002873B3 /* CollectionItemCell.swift */; };
+		561816A627282123002873B3 /* CollectionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561816A427282123002873B3 /* CollectionItemCell.xib */; };
 		563425C32707531500C621EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F7065F26C5A798006D1194 /* Assets.xcassets */; };
 		56C8AD9526F4880C0034A41F /* ButterCMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 56C8AD9426F4880C0034A41F /* ButterCMSSDK */; };
 		56C8AD9926F4A0DE0034A41F /* HomePageFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */; };
@@ -64,6 +68,10 @@
 		5618169627269A85002873B3 /* PageDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PageDetail.storyboard; sourceTree = "<group>"; };
 		561816982726A0A4002873B3 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		5618169A2726C3C3002873B3 /* UIScrallViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrallViewHelper.swift; sourceTree = "<group>"; };
+		5618169C27281BD6002873B3 /* FaqCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqCollectionItem.swift; sourceTree = "<group>"; };
+		5618169E27281D82002873B3 /* FaqCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqCollectionViewModel.swift; sourceTree = "<group>"; };
+		561816A327282123002873B3 /* CollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemCell.swift; sourceTree = "<group>"; };
+		561816A427282123002873B3 /* CollectionItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionItemCell.xib; sourceTree = "<group>"; };
 		56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageFields.swift; sourceTree = "<group>"; };
 		56C8AD9C26F4A2AE0034A41F /* ButterCMSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterCMSManager.swift; sourceTree = "<group>"; };
 		56C8AD9F26F4C9720034A41F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -134,6 +142,15 @@
 			name = Page;
 			sourceTree = "<group>";
 		};
+		561816A2272820E3002873B3 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				561816A327282123002873B3 /* CollectionItemCell.swift */,
+				561816A427282123002873B3 /* CollectionItemCell.xib */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		563425C4270753A900C621EB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +162,7 @@
 		56C8AD9626F48D350034A41F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				561816A2272820E3002873B3 /* Collection */,
 				5608DC922722F70400A88729 /* Page */,
 				5608DC81271F187D00A88729 /* Blog */,
 				5608DC80271F186200A88729 /* Home */,
@@ -158,6 +176,7 @@
 			children = (
 				56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */,
 				5608DC9B2722F8DD00A88729 /* CaseStudyPageFields.swift */,
+				5618169C27281BD6002873B3 /* FaqCollectionItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +197,7 @@
 				5608DC8E2721A3D800A88729 /* PostViewModel.swift */,
 				5608DC972722F7A400A88729 /* PageViewModel.swift */,
 				5608DC992722F84500A88729 /* PagesViewModel.swift */,
+				5618169E27281D82002873B3 /* FaqCollectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -307,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5618169727269A85002873B3 /* PageDetail.storyboard in Resources */,
+				561816A627282123002873B3 /* CollectionItemCell.xib in Resources */,
 				56F7066326C5A798006D1194 /* LaunchScreen.storyboard in Resources */,
 				5608DC85271F18F300A88729 /* BlogCell.xib in Resources */,
 				56FD0B0727021CAC00C595D5 /* HomeDocurlCell.xib in Resources */,
@@ -348,9 +369,11 @@
 			files = (
 				5608DC8F2721A3D800A88729 /* PostViewModel.swift in Sources */,
 				56C8AD9D26F4A2AE0034A41F /* ButterCMSManager.swift in Sources */,
+				561816A527282123002873B3 /* CollectionItemCell.swift in Sources */,
 				56EE671226F0E5D600108698 /* CollectionsViewController.swift in Sources */,
 				5608DC9A2722F84500A88729 /* PagesViewModel.swift in Sources */,
 				56CD39BE26FCB4ED003B26E9 /* HomeSectionCell.swift in Sources */,
+				5618169F27281D82002873B3 /* FaqCollectionViewModel.swift in Sources */,
 				56EE670C26F0E40C00108698 /* HomeViewController.swift in Sources */,
 				56C8ADA026F4C9720034A41F /* HomeViewModel.swift in Sources */,
 				5608DC952722F72A00A88729 /* PageCell.swift in Sources */,
@@ -370,6 +393,7 @@
 				5618169B2726C3C3002873B3 /* UIScrallViewHelper.swift in Sources */,
 				5608DC9C2722F8DD00A88729 /* CaseStudyPageFields.swift in Sources */,
 				5608DC912721AF8700A88729 /* ViewControllerHelper.swift in Sources */,
+				5618169D27281BD6002873B3 /* FaqCollectionItem.swift in Sources */,
 				5608DC84271F18F300A88729 /* BlogCell.swift in Sources */,
 				56FD0B002700A42800C595D5 /* WebViewController.swift in Sources */,
 				56C8AD9926F4A0DE0034A41F /* HomePageFields.swift in Sources */,

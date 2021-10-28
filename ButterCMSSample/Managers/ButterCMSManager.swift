@@ -14,6 +14,7 @@ class ButterCMSManager {
     let homePageSubject = PassthroughSubject<PageResponse<HomePageFields>, Error>()
     let caseStudyPagesSubject = PassthroughSubject<PagesResponse<CaseStudyPageFields>, Error>()
     let caseStudyPageSubject = PassthroughSubject<PageResponse<CaseStudyPageFields>, Error>()
+    let faqCollectionSubject = PassthroughSubject<CollectionResponse<FaqCollectionItem>, Error>()
     let blogSubject = PassthroughSubject<PostsResponse, Error>()
     let postSubject = PassthroughSubject<PostResponse, Error>()
     
@@ -68,6 +69,17 @@ class ButterCMSManager {
                 self.caseStudyPageSubject.send(page)
             case .failure(let error):
                 self.caseStudyPageSubject.send(completion: .failure(error))
+            }
+        }
+    }
+
+    func getCollection() {
+        butter.getCollection(slug: "faq", parameters: [.locale(value: "en")], type: FaqCollectionItem.self) { result in
+            switch result {
+            case .success(let items):
+                self.faqCollectionSubject.send(items)
+            case .failure(let error):
+                self.faqCollectionSubject.send(completion: .failure(error))
             }
         }
     }
