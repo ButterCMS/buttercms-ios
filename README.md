@@ -16,7 +16,7 @@ and one model for Collection:
     
 * [Faq](ButterCMSSample/Model/FaqCollectionItem.swift)
     
-The configuration of the ButterCMSSDK and calls of individal APIs can be found in [ButterCMSManager.swift]((ButterCMSSample/Managers/ButterCMSManager.swift).
+The configuration of the ButterCMSSDK and calls of individal APIs can be found in [ButterCMSManager.swift](ButterCMSSample/Managers/ButterCMSManager.swift).
 
  
 
