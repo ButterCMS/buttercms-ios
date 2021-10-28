@@ -28,6 +28,7 @@
 		561816A527282123002873B3 /* CollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561816A327282123002873B3 /* CollectionItemCell.swift */; };
 		561816A627282123002873B3 /* CollectionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561816A427282123002873B3 /* CollectionItemCell.xib */; };
 		561816A9272AF059002873B3 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 561816A8272AF059002873B3 /* AlamofireImage */; };
+		561816AB272B2C69002873B3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 561816AA272B2C69002873B3 /* README.md */; };
 		563425C32707531500C621EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F7065F26C5A798006D1194 /* Assets.xcassets */; };
 		56C8AD9526F4880C0034A41F /* ButterCMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 56C8AD9426F4880C0034A41F /* ButterCMSSDK */; };
 		56C8AD9926F4A0DE0034A41F /* HomePageFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */; };
@@ -73,6 +74,7 @@
 		5618169E27281D82002873B3 /* FaqCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqCollectionViewModel.swift; sourceTree = "<group>"; };
 		561816A327282123002873B3 /* CollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemCell.swift; sourceTree = "<group>"; };
 		561816A427282123002873B3 /* CollectionItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionItemCell.xib; sourceTree = "<group>"; };
+		561816AA272B2C69002873B3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageFields.swift; sourceTree = "<group>"; };
 		56C8AD9C26F4A2AE0034A41F /* ButterCMSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterCMSManager.swift; sourceTree = "<group>"; };
 		56C8AD9F26F4C9720034A41F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		56F7064A26C5A794006D1194 = {
 			isa = PBXGroup;
 			children = (
+				561816AA272B2C69002873B3 /* README.md */,
 				56F7065526C5A795006D1194 /* ButterCMSSample */,
 				56F7065426C5A795006D1194 /* Products */,
 			);
@@ -336,6 +339,7 @@
 				5608DC85271F18F300A88729 /* BlogCell.xib in Resources */,
 				56FD0B0727021CAC00C595D5 /* HomeDocurlCell.xib in Resources */,
 				56CD39BF26FCB4ED003B26E9 /* HomeSectionCell.xib in Resources */,
+				561816AB272B2C69002873B3 /* README.md in Resources */,
 				56C8ADA826F65F780034A41F /* HomeTitleCell.xib in Resources */,
 				5608DC962722F72A00A88729 /* PageCell.xib in Resources */,
 				5608DC8B27218D8F00A88729 /* BacklogDetail.storyboard in Resources */,
