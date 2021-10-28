@@ -14,7 +14,7 @@ ButterCMSSDK automatically deserializes json data received from REST APIs. Where
 
 and one model for Collection:
     
-* [Faq](ButterCMSSample/Model/FaqCollectionItem.swift
+* [Faq](ButterCMSSample/Model/FaqCollectionItem.swift)
     
 The configuration of the ButterCMSSDK and calls of individal APIs can be found in Managers/ButterCMSManager.swift.
 
