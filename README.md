@@ -7,7 +7,7 @@ The sample application is implemented for iOS 14 or higher. It is connected to a
 * Blog posts
 * Collections
 
-ButterCMSSDK automatically deserializes json data received from REST APIs. Where Blog posts have a fixed data model the Pages and Collections have to be fine-tuned by generics. There are two models of pages:
+ButterCMSSDK automatically deserializes json data received from REST APIs. Where Blog posts have a fixed data model the Pages and Collections have to be fine-tuned by generics. There are two models for pages:
 
 * [HomePage](ButterCMSSample/Model/HomePageFields.swift) 
 * [CaseStudyPage](ButterCMSSample/Model/CaseStudyPageFields.swift) 
