@@ -3,10 +3,10 @@ ButterCMS is a headless CMS which provides content through REST APIs. The [Swift
 
 The sample application is implemented for iOS 14 or higher. It does not support dark mode.
 
-![Screenshot](screenshots/home.PNG)
-![Screenshot](screenshots/blogs.PNG)
-![Screenshot](screenshots/collection.PNG)
-![Screenshot](screenshots/pages.PNG)
+![Screenshot](screenshot/home.PNG)
+![Screenshot](screenshot/blogs.PNG)
+![Screenshot](screenshot/collections.PNG)
+![Screenshot](screenshot/pages.PNG)
 
 
 It is connected to a sample ButterCMS instance. It demonstrates usage of the following main object available in ButterCMS:
