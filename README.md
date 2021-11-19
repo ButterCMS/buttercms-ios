@@ -8,8 +8,7 @@ The sample application is implemented for iOS 14 or higher. It does not support 
 ![Screenshot](screenshot/collections.PNG)
 ![Screenshot](screenshot/pages.PNG)
 
-
-It is connected to a sample ButterCMS instance. It demonstrates usage of the following main object available in ButterCMS:
+The app is connected to a sample ButterCMS instance. It demonstrates usage of the following main object available in ButterCMS:
 
 * Pages
 * Blog posts
@@ -26,5 +25,11 @@ and one model for Collection:
     
 The configuration of the ButterCMSSDK and calls of individal APIs can be found in [ButterCMSManager.swift](ButterCMSSample/Managers/ButterCMSManager.swift).
 
- 
+# Getting started
+ - Download Sample application from GitHub
+    ```
+    git clone https://github.com/ButterCMS/buttercms-ios.git
+    ``` 
+ - Open file ButterCMSSample.xcodeproj in XCode
+ - Build and Run
 
