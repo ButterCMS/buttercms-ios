@@ -1,7 +1,15 @@
 # ButterCMSSDK sample application
 ButterCMS is a headless CMS which provides content through REST APIs. The [Swift ButterCMSSDK](https://github.com/ButterCMS/buttercms-swift) simplifies interaction with those REST APIs. 
 
-The sample application is implemented for iOS 14 or higher. It is connected to a sample ButterCMS instance. It demonstrates usage of the following main object available in ButterCMS:
+The sample application is implemented for iOS 14 or higher. It does not support dark mode.
+
+![Screenshot](screenshots/home.PNG)
+![Screenshot](screenshots/blogs.PNG)
+![Screenshot](screenshots/collection.PNG)
+![Screenshot](screenshots/pages.PNG)
+
+
+It is connected to a sample ButterCMS instance. It demonstrates usage of the following main object available in ButterCMS:
 
 * Pages
 * Blog posts
