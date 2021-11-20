@@ -34,6 +34,7 @@
 		567D430C2747CE8F000C54BE /* home.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 567D43082747CE8F000C54BE /* home.PNG */; };
 		567D430D2747CE8F000C54BE /* blogs.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 567D43092747CE8F000C54BE /* blogs.PNG */; };
 		567D430E2747CE8F000C54BE /* pages.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 567D430A2747CE8F000C54BE /* pages.PNG */; };
+		567D431027490A99000C54BE /* casestudiesschema.png in Resources */ = {isa = PBXBuildFile; fileRef = 567D430F27490A98000C54BE /* casestudiesschema.png */; };
 		56C8AD9526F4880C0034A41F /* ButterCMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 56C8AD9426F4880C0034A41F /* ButterCMSSDK */; };
 		56C8AD9926F4A0DE0034A41F /* HomePageFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */; };
 		56C8AD9D26F4A2AE0034A41F /* ButterCMSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8AD9C26F4A2AE0034A41F /* ButterCMSManager.swift */; };
@@ -83,6 +84,7 @@
 		567D43082747CE8F000C54BE /* home.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.PNG; sourceTree = "<group>"; };
 		567D43092747CE8F000C54BE /* blogs.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogs.PNG; sourceTree = "<group>"; };
 		567D430A2747CE8F000C54BE /* pages.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pages.PNG; sourceTree = "<group>"; };
+		567D430F27490A98000C54BE /* casestudiesschema.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = casestudiesschema.png; sourceTree = "<group>"; };
 		56C8AD9826F4A0DE0034A41F /* HomePageFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageFields.swift; sourceTree = "<group>"; };
 		56C8AD9C26F4A2AE0034A41F /* ButterCMSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterCMSManager.swift; sourceTree = "<group>"; };
 		56C8AD9F26F4C9720034A41F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		567D43062747CAD5000C54BE /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
+				567D430F27490A98000C54BE /* casestudiesschema.png */,
 				567D43092747CE8F000C54BE /* blogs.PNG */,
 				567D43072747CE8F000C54BE /* collections.PNG */,
 				567D43082747CE8F000C54BE /* home.PNG */,
@@ -361,6 +364,7 @@
 				56FD0B0727021CAC00C595D5 /* HomeDocurlCell.xib in Resources */,
 				56CD39BF26FCB4ED003B26E9 /* HomeSectionCell.xib in Resources */,
 				561816AB272B2C69002873B3 /* README.md in Resources */,
+				567D431027490A99000C54BE /* casestudiesschema.png in Resources */,
 				56C8ADA826F65F780034A41F /* HomeTitleCell.xib in Resources */,
 				5608DC962722F72A00A88729 /* PageCell.xib in Resources */,
 				5608DC8B27218D8F00A88729 /* BacklogDetail.storyboard in Resources */,
