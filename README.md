@@ -54,4 +54,4 @@ This model corresponds to Case studies page schema in ButterCMS:
 ![Screenshot](screenshot/casestudiesschema.png)
 
 ## What next
-Now you have the data and networking layer prepared. The rest of the chnages are not that generic and simple as they are related to how your application shall looks like and what it shall do. You have to tailor ViewModels and Views to your need. Here you also may want to use completly different architecture perhaps based on SwiftUI rather than UIKit etc. 
+Now you have the data and networking layer prepared. The rest of the changes are not that generic and simple as they are related to how your application shall looks like and what it shall do. You have to tailor ViewModels and Views to your need. Here you also may want to use completly different architecture perhaps based on SwiftUI rather than UIKit etc. 
