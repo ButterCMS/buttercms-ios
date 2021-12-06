@@ -21,7 +21,7 @@ class FaqCollectionViewModel {
                 receiveCompletion: { completion in
                     switch completion {
                     case .finished: break
-                    case .failure(let error): self.errorMessage.send(error.localizedDescription)
+                    case .failure(let error): self.errorMessage.send(ErrorString.getString(error: error))
                     }
                 },
                 receiveValue: { [weak self] value in self?.collection = value }

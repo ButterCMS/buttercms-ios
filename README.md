@@ -35,7 +35,7 @@ The configuration of the ButterCMSSDK and calls of individual APIs can be found 
 
 ## Amend to your needs
 
-First of all you need to point the ButterCMSSDK to your ButterCMS instance. For that you need to change apikey in ButterCMSManager.swift. Then you need to change models to reflect you configuration of pages, collections and posts. You can find existing ones in folder Model. For example this is the Case study page model:
+First of all you need to point the ButterCMSSDK to your ButterCMS instance. For that you need to change apikey in ButterCMSManager.swift. Then you need to change models to reflect you configuration of pages, collections and posts. You can find existing ones in folder Model. For example this is our Case study page model:
 
 ```
 struct CaseStudyPageFields: Codable {

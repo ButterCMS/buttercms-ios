@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/ButterCMS/buttercms-swift.git",
         "state": {
           "branch": null,
-          "revision": "fed018f8c23d995ceaf9c18942b7fdfbbdaeba06",
-          "version": "1.0.5"
+          "revision": "010b7e8ba39793fe580445c0f59f5466f70e3fc8",
+          "version": "1.0.7"
         }
       }
     ]
