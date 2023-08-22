@@ -10,7 +10,7 @@ import Combine
 
 class ButterCMSManager {
     static var shared = ButterCMSManager()
-    let butter = ButterCMSClient(apiKey: "YOUR-TOKEN-HERE")
+    let butter = ButterCMSClient(apiKey: "3606556ecbd4134ea24b8936a829ab9edaddb583")
     let homePageSubject = PassthroughSubject<PageResponse<HomePageFields>, Error>()
     let caseStudyPagesSubject = PassthroughSubject<PagesResponse<CaseStudyPageFields>, Error>()
     let caseStudyPageSubject = PassthroughSubject<PageResponse<CaseStudyPageFields>, Error>()
