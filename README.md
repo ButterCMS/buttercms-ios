@@ -8,7 +8,7 @@ The sample application is implemented for iOS 14 or higher. It does not support 
 ![Screenshot](screenshot/collections.PNG)
 ![Screenshot](screenshot/pages.PNG)
 
-The app is connected to a sample ButterCMS instance. It demonstrates usage of the following main object available in ButterCMS:
+The app is connected to a sample ButterCMS account that includes all of the content necessary for it to function (as such, please don't change the token--this content will not exist in a newly created account!) This app demonstrates usage of the following main content types available in ButterCMS:
 
 * Pages
 * Blog posts
